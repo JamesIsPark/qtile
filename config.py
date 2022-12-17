@@ -3,11 +3,11 @@
 #\ \ \/\_\  \/_/\ \/ \ \ \  \ \ \____  \ \  __\      \ \ \____  \ \ \/\ \  \ \ \-.  \  \ \  __\ \ \ \  \ \ \__ \  #
 # \ \___\_\    \ \_\  \ \_\  \ \_____\  \ \_____\     \ \_____\  \ \_____\  \ \_\\"\_\  \ \_\    \ \_\  \ \_____\ #
 #  \/___/_/     \/_/   \/_/   \/_____/   \/_____/      \/_____/   \/_____/   \/_/ \/_/   \/_/     \/_/   \/_____/ #
-
-#	Author: Park, James.				   
-#	Born: 12/16/22				           
-#	Revised:					   
-#	Description: This is the main qtile config file that qtile reads from.
+#                                                                                                                 #
+#	Author: Park, James.				                                                                          # 
+#	Born: 12/16/22				                                                                                  #
+#	Revised:					                                                                                  #
+#	Description: This is the main qtile config file that qtile reads from.                                        #
 
 
 import os
