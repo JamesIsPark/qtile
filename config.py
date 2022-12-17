@@ -8,6 +8,7 @@
 #	Born: 12/16/22				           
 #	Revised:					   
 #	Description: This is the main qtile config file that qtile reads from.
+#
 
 import os
 import subprocess
