@@ -9,7 +9,6 @@
 #	Born: 12/17/22						           
 #	Revised:		
 #   Description: This file is meant to stand as the main hub for basic setting changes.
-
 from libqtile.config import Group
 
 ###################### COLOR SETTINGS ###################### 
@@ -75,5 +74,5 @@ LAYOUT_UP = "k"
 LAYOUT_NEXT = "space"
 
 LAYOUT_RESET = "n"
-###################### GROUPS ######################
+
 groups = [Group(i) for i in "123456"]

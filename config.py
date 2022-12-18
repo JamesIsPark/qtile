@@ -23,7 +23,6 @@ from conf_widgets import *
 
 
 obj_keys    = Keybindings()
-
 obj_mouse   = Mouse()
 
 # Init
