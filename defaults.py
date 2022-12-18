@@ -72,5 +72,8 @@ LAYOUT_RIGHT = "l"
 LAYOUT_DOWN = "j"
 LAYOUT_UP = "k"
 
+LAYOUT_NEXT = "space"
+
+LAYOUT_RESET = "n"
 ###################### GROUPS ######################
 groups = [Group(i) for i in "123456"]

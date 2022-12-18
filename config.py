@@ -17,9 +17,18 @@ from libqtile import hook
 from libqtile.lazy import lazy
 
 # local files
-from conf_keys import *
+from conf_keys import Keybindings, Mouse
 from conf_layouts import *
 from conf_widgets import *
+
+
+obj_keys    = Keybindings()
+
+obj_mouse   = Mouse()
+
+# Init
+keys        = obj_keys.init_keys()
+mouse       = obj_mouse.init_mouse()
 
 
 dgroups_key_binder = None
