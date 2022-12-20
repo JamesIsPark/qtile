@@ -16,6 +16,7 @@ from libqtile.lazy import lazy
 # Local Files
 from defaults import *
 
+
 #    # New Keybinds
 #     Key([MOD], "m", lazy.window.toggle_floating())
 
@@ -69,12 +70,18 @@ class Keybindings:
         qtile_quit = Key([MOD, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile")
         self.keys += [window_kill, qtile_restart, qtile_quit]
     # end method
-    
+
+    def create_sound_keys(self):
+        sink_swap = Key([MOD], "f12", lazy.spawn([HOME + '/.config/qtile/scripts/sink-switch.sh']))
+        self.keys += [sink_swap]
+    #end method
+
     def init_keys(self):
         self.create_layout_keys()
         self.create_spawn_keys()
         self.create_system_keys()
         self.create_group_keys()
+        self.create_sound_keys()
         
         return self.keys
     # end method

@@ -9,6 +9,7 @@
 #	Born: 12/17/22						           
 #	Revised:		
 #   Description: This file is meant to stand as the main hub for basic setting changes.
+import os
 from libqtile.config import Group
 
 ###################### COLOR SETTINGS ###################### 
@@ -62,6 +63,8 @@ colors = {
 
 ###################### CONSTANTS ###################### 
 TERMINAL = "kitty"
+
+HOME = os.path.expanduser('~')
 
 ##### KEYBINDING CONSTANTS #####
 MOD = "mod4"
