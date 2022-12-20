@@ -54,6 +54,7 @@ class Keybindings:
         for i in groups:
             group_key = Key([MOD], i.name, lazy.group[i.name].toscreen(), desc="Switch to group {}".format(i.name))
             move_window_key = Key([MOD, "shift"], i.name, lazy.window.togroup(i.name), desc="move focused window to group {}".format(i.name))
+
             self.keys += [group_key, move_window_key]
         # end loop
     # end method
@@ -61,6 +62,7 @@ class Keybindings:
     def create_spawn_keys(self):
         spawn_terminal = Key([MOD], "Return", lazy.spawn(TERMINAL), desc="Launch TERMINAL")
         spawn_launcher = Key([MOD], "r", lazy.spawn("rofi -show drun -show-icons"), desc="Spawn a command using a prompt widget")
+
         self.keys += [spawn_terminal, spawn_launcher]
     # end method
 
@@ -68,12 +70,16 @@ class Keybindings:
         window_kill = Key([MOD], "w", lazy.window.kill(), desc="Kill focused window")
         qtile_restart = Key([MOD, "control"], "r", lazy.reload_config(), desc="Reload the config")
         qtile_quit = Key([MOD, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile")
+
         self.keys += [window_kill, qtile_restart, qtile_quit]
     # end method
 
     def create_sound_keys(self):
         sink_swap = Key([MOD], "f12", lazy.spawn([HOME + '/.config/qtile/scripts/sink-switch.sh']))
-        self.keys += [sink_swap]
+        sink_volume_down = Key([MOD], "f10", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%"))
+        sink_volume_up = Key([MOD], "f11", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%"))
+
+        self.keys += [sink_swap, sink_volume_down, sink_volume_up]
     #end method
 
     def init_keys(self):
