@@ -23,9 +23,9 @@ layout_defaults = {
             "border_normal": colors["dark0"]}
 
 layouts = [
-    layout.Max(**layout_defaults),
+    layout.Max(),
     layout.MonadTall(**layout_defaults),
-    #layout.floating.Floating(**layout_defaults),
+    layout.floating.Floating(**layout_defaults),
 ]
 
 floating_layout = layout.Floating(
