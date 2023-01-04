@@ -53,13 +53,7 @@ screens = [
                 **widget_defaults
             ),
             widget.Sep(**widget_defaults),
-            widget.CheckUpdates(
-                distro="Arch",
-                no_update_string='No updates',
-                colour_have_updates=colors["light0"],
-                colour_no_updates=colors["light0"],
-                **widget_defaults
-            ),
+            widget.PulseVolume(**widget_defaults),
             widget.Sep(**widget_defaults),
             widget.QuickExit(
                 default_text='[X]',

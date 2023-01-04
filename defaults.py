@@ -78,4 +78,7 @@ LAYOUT_NEXT = "space"
 
 LAYOUT_RESET = "n"
 
+NEXT_GROUP = "period"
+PREV_GROUP = "comma"
+
 groups = [Group(i) for i in "123456"]

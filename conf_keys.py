@@ -57,6 +57,11 @@ class Keybindings:
 
             self.keys += [group_key, move_window_key]
         # end loop
+
+        screen_next = Key([MOD], NEXT_GROUP, lazy.next_screen()) 
+        screen_prev = Key([MOD], PREV_GROUP, lazy.next_screen()) 
+
+        self.keys += [screen_next, screen_prev]
     # end method
 
     def create_spawn_keys(self):
